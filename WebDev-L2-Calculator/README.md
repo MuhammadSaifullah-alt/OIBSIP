@@ -20,18 +20,6 @@ A simple and responsive calculator built using HTML, CSS, and JavaScript as part
 - CSS3
 - JavaScript (Vanilla JS)
 
-## Project Structure
-
-```
-WebDev-L2-Calculator/
-│
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── screenshots/
-```
-
 ## Screenshots
 
 Screenshots are in Screenshot folder.
