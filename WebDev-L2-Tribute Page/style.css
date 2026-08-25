@@ -1,0 +1,784 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: poppins;
+}
+.nav{
+    width: 100%;
+    background-color: #131A2A;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #D4AF37;
+    border-bottom: 1px solid rgba(212,175,55,0.5);
+
+    position: fixed;
+    z-index: 3;
+}
+.navhead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navhead img{
+    width: 100px;
+    fill: #D4AF37;
+}
+h1{
+    font-family: "Playfair Display";
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+a{
+    color: #F7F0E3;
+    text-decoration: none;
+    transition: .2s ease;
+}
+a:hover{
+    color: #D4AF37;
+}
+
+.hero-section{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url("Assets/conquest-bg.jpeg");
+    border-bottom: 1px solid rgba(212,175,55,0.5);
+
+}
+.hero-section .effect{
+    flex-direction: row;
+}
+.hero-content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.hero-section h1{
+    font-size: 4rem;
+    color: white;
+}
+.hero-content p{
+    color: white;
+    font-size: larger;
+}
+h4{
+    color: #D4AF37;
+    font-size: 1.5rem;
+}
+.portrait img{
+    width: 500px;
+    border: 3px solid rgba(212, 175, 55, 0.5);
+    box-shadow: 5px 5px 15px #D4AF37;
+    animation: royalFloat 5s ease-in-out infinite;
+    animation: sultanEntrance .3s ease forwards;
+}
+
+@keyframes sultanEntrance{
+
+    0%{
+        oxpacity: 0;
+        transform: translateY(300px) scale(.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+
+
+.biography{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("Assets/pak.jpeg");
+    border-bottom: 1px solid rgba(212,175,55,0.5);
+}
+.biography h1{
+    font-size: 3rem;
+    color: #291A10;
+}
+.bio-content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.bio-content p{
+    color: black;
+    font-size: larger;
+} 
+#firstLetter::first-letter{
+    font-size: 3rem;
+}
+.portrait2 img{
+    width: 350px;
+    animation: zoom 3s ease-in-out infinite;
+    border: 3px solid rgba(212, 175, 55, 0.9);
+    box-shadow: 0px 0px 20px #D4AF37;
+}
+
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.03);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+.Timeline{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("Assets/conquest-bg.jpeg");
+    border-bottom: 1px solid rgba(212,175,55,0.5);
+}
+.Timeline .T-effect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(19, 26, 44, 0.9);
+}
+.T-effect h1{
+    margin-top: 20px;
+}
+.container{
+    width: 70%;
+    height: 70vh;
+    position: relative;
+}
+.Timeline h1{
+    color: #F3F2E1;
+    font-size: 3rem;
+}
+.box{
+    position: absolute;
+    background-color: #2A323F;
+    border: 2px solid #D4AF37;
+    height: 80px;
+    width: 40%;
+    color: #F3F2E1;
+    transition: 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box p{
+    font-size: 1.7rem;
+    font-family: Cinzel;
+}
+.box:hover{
+    box-shadow: 0px 0px 10px #D4AF37 ;
+    transform: translateY(-5px);
+}
+.line{
+    height: 100%;
+    width: 5px;
+    background-color: #D4AF37;
+    border-radius: 50px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.one{
+    left: 0px;
+    top: 0px;
+}
+.two{
+    right: 0px;
+    top:   50px;
+}
+.three{
+    left: 0px;
+    top: 140px;
+}
+.four{
+    right: 0px;
+    top: 210px;
+}
+.five{
+    left: 0px;
+    top: 290px;
+}
+.six{
+    right: 0px;
+    top: 360px;
+}
+.box::before{
+    content:"";
+
+    position:absolute;
+
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    background:#D4AF37;
+
+    top:40%;
+}
+
+.one::before,
+.three::before,
+.five::before{
+    right:-70px;
+}
+.two::before,
+.four::before,
+.six::before{
+    left:-70px;
+}
+
+
+.conquests{
+    background-image: url("Assets/conquest-bg.jpeg");
+    z-index: 2;
+
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(212,175,55,0.5); 
+}
+.shape{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(19, 26, 44, 0.9);
+}
+.conquests  h1{
+    color: #F3F2E1;
+    font-size: 3rem;
+}
+.shape-2{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.shape-2 .conq-content p{
+    color: white;
+    font-size: larger;
+}
+.constantinopole{
+    width: 40%;
+    height: 400px;
+    
+    object-fit: contain;
+}
+.constantinopole img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(212, 175, 55, 0.7);
+    box-shadow: 0px 0px 20px #D4AF37;
+    animation: zoom 3s ease-in-out infinite;
+}
+
+.conq-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 90%;
+}
+.paras{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.info-blocks{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.block{
+    background-color: #2A323F;
+    width: 110px;
+    height: 110px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cinzel;
+    color: #F3F2E1;
+    font-size: larger;
+    border: 2px solid #D4AF37;
+    box-shadow: 0px 0px 5px #D4AF37;
+    border-radius: 2px;
+}
+
+.qoute-section{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("Assets/pak.jpeg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.qoute-section h1{
+    color: #291A10;
+    font-size: 3rem;
+}
+.qoutes{
+    width: 80%;
+    height: 70vh;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.qoute-section h1{
+    margin-top: 30px;
+}
+.qoute{
+    background-image: url("Assets/qoute-bgRe.png");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F3F2E1;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid #845C2D;
+    height:30vh;
+    transition: .3s ease;
+}
+.qoute:hover{
+    transform: translateY(-10px);
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+blockquote{
+    background-color: rgba(42, 50, 63,0.5); 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: Playfair Display;
+    font-size: x-large;
+}
+
+
+.patron-section{
+    height: 100vh;
+    background-image: url("Assets/pak.jpeg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(212,175,55,0.5);
+    border-bottom: 1px solid rgba(212,175,55,0.5);
+}
+.patron-section h1{
+    font-size: 3rem;
+    color: #291A10;
+}
+.artnknow{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 80vh;
+    width: 80%;
+    
+}
+
+.art{
+    height: 70vh;
+    max-width: 30%;
+    margin: 5px;
+    background-color: #F4F1E0;
+    border: 5px solid #AA9D6E;
+    box-shadow: 0px 0px 10px #AA9D6E;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    transition: .3s ease;
+    padding-top: 10px;
+
+
+}
+.art p{
+    width: 90%;
+}
+.art:hover{
+    transform: translateY(-15px);
+}
+.art h2{
+    font-family: Playfair Display;
+}
+.scholar{
+    width: 90%;
+    height: 40%; 
+}
+.scholar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #AA9D6E;
+}
+
+.legacy-section{
+    height: 100vh;
+    background-image: url("Assets/conquest-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(212,175,55,0.5);
+    border-bottom: 1px solid rgba(212,175,55,0.5);
+}
+.effect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(19, 26, 44, 0.9);
+
+    position: relative;
+}
+.back{
+    border:2px solid #D4AF37;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    color: #D4AF37;
+    font-size: 2rem;
+}
+.back:hover{
+    box-shadow: 0px 0px 20px #D4AF37;;
+}
+.legacy-section h1{
+    margin-top: 50px;
+    color: #F3F2E1;
+    font-size: 3rem;
+}
+.legacy-section h1::before{
+    content: "✦ ";
+    font-size: 2rem;
+}
+.legacy-section h1::after{
+    content: " ✦";
+    font-size: 2rem;
+}
+.biography h1::before{
+    content: "✦ ";
+    font-size: 2rem;
+}
+.biography h1::after{
+    content: " ✦";
+    font-size: 2rem;
+}
+.Timeline h1::before{
+    content: "✦ ";
+    font-size: 2rem;
+}
+.Timeline h1::after{
+    content: " ✦";
+    font-size: 2rem;
+}
+.conquests h1::before{
+    content: "✦ ";
+    font-size: 2rem;
+}
+.conquests h1::after{
+    content: " ✦";
+    font-size: 2rem;
+}
+.qoute-section h1::before{
+    content: "✦ ";
+    font-size: 2rem;
+}
+.qoute-section h1::after{
+    content: " ✦";
+    font-size: 2rem;
+}
+.patron-section h1::before{
+    content: "✦ ";
+    font-size: 2rem;
+}
+.patron-section h1::after{
+    content: " ✦";
+    font-size: 2rem;
+}
+
+
+.fade-up{
+    opacity: 0;
+    transform: translateY(60px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.5s ease;
+}
+
+.fade-up.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+
+    .nav{
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navhead{
+        flex-direction: column;
+    }
+
+    .navhead img{
+        width: 70px;
+    }
+
+    .navhead h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* HERO */
+
+    .hero-section .effect{
+        flex-direction: column-reverse;
+        padding-top: 120px;
+        gap: 30px;
+    }
+
+    .hero-content{
+        width: 90%;
+        text-align: center;
+    }
+
+    .hero-section h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    .portrait img{
+        width: 280px;
+    }
+
+    /* BIOGRAPHY */
+
+    .biography{
+        flex-direction: column;
+        padding: 120px 0 50px;
+        gap: 30px;
+    }
+
+    .portrait2 img{
+        width: 250px;
+    }
+
+    .bio-content{
+        width: 90%;
+        text-align: center;
+    }
+
+    .biography h1{
+        font-size: 2rem;
+    }
+
+    /* TIMELINE */
+
+    .Timeline{
+        padding: 80px 0;
+    }
+
+    .container{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .box{
+        position: static;
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+    }
+
+    .box::before{
+        display: none;
+    }
+
+    .box p{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* CONQUEST */
+
+    .shape{
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .shape-2{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .constantinopole{
+        width: 100%;
+        height: auto;
+    }
+
+    .constantinopole img{
+        width: 100%;
+        height: auto;
+    }
+
+    .conq-content{
+        width: 100%;
+    }
+
+    .info-blocks{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* QUOTES */
+
+    .qoute-section{
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .qoutes{
+        width: 90%;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .qoute{
+        height: 200px;
+    }
+
+    /* PATRON SECTION */
+
+    .patron-section{
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .artnknow{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .art{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    /* LEGACY */
+
+    .legacy-section{
+        height: auto;
+    }
+
+    .effect{
+        height: auto;
+        padding: 80px 0;
+    }
+
+    /* HEADINGS */
+
+    .biography h1,
+    .Timeline h1,
+    .conquests h1,
+    .qoute-section h1,
+    .patron-section h1,
+    .legacy-section h1{
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    /* BACK TO TOP */
+
+    .back{
+        right: 10px;
+        bottom: 10px;
+    }
+}
