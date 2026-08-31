@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do WebApp</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">✔</div>
+
+            <div class="name">
+                <h1>To-Do List</h1>
+                <p>Stay organized every day</p>
+            </div>
+        </div>
+
+        <div class="addTask">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addBtn">Add Task +</button>
+        </div>
+
+        <div class="stats">
+            <button id="clearButton">Clear All</button>
+            <div class="spacing" id="taskContainer">
+
+                <div class="notask">
+                    <div class="nt">
+                        <img src="Assets/no tasks.png" alt="No Tasks">
+                    </div>
+
+                    <h2>No tasks yet</h2>
+                    <p>Add a new task to get started</p>
+                </div>
+
+                <div class="tasksContent">
+
+                    <h2>Statistics</h2>
+
+                    <div class="links">
+                        <a href="" id="allTasksLink">All Tasks</a>
+                        <a href="" id="completedTasksLink">Completed</a>
+                        <a href="" id="pendingTasksLink">Pending</a>
+                    </div>
+
+                    <!-- ALL TASKS -->
+                    <div class="taskList all-tasks" id="allTasks">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
