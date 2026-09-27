@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+.formSide{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Assets/loginBg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.form{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+}
+.info{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    /* background-color: aquamarine; */
+    margin-top: 10px;
+    gap: 10px;
+}
+.info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 2px;
+}
+.info p{
+    font-size: 14px;
+}
+#passInstr{
+    font-size: x-small;
+}
+.info div input{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+button{
+    padding: 5px 0px 5px 0px;
+    font-weight:600;
+    background: linear-gradient(to right, #15267D, #1A58A8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#forget{
+    display: flex;
+    align-items: end;
+    font-size: 12px;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.name img{
+    width: 30px;
+}
+.greetings{
+    margin-top: 10px;
+}
+.greetings p{
+    font-size: 14px;
+}
